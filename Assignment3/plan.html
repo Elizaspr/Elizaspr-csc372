@@ -1,0 +1,58 @@
+<!-- plan.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meal Plan</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Plan Your Meals</h1>
+    </header>
+    <div class="container">
+        <aside class="sidebar">
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="plan.html">Meal Plan</a></li>
+                </ul>
+            </nav>
+        </aside>
+        <main>
+            <section id="meal-plan">
+                <h2>Your Meal Plan</h2>
+                <div class="meal-plan-container">
+                    <aside id="dish-selection">
+                        <h3>Available Dishes</h3>
+                        <ul id="dish-list">
+                            <li><button onclick="addToMealPlan( 'Wings', 9.99)"> Wings - $9.99</button></li>
+                            <li><button onclick="addToMealPlan('Street Corn ', 9.49)">Street Corn - $9.49</button></li>
+                            <li><button onclick="addToMealPlan('Nachos',12.49 )">Nachos - $12.49</button></li>
+                            <li><button onclick="addToMealPlan('DragonRoll', 13.00 )">DragonRoll  - $13.00</button></li>
+                            <li><button onclick="addToMealPlan('Tempura Udon', 12.50 )"> Tempura Udon - $12.50</button></li>
+                            <li><button onclick="addToMealPlan('Eel Roll', 8.50 )">Eel Roll - $8.50</button></li>
+                            <li><button onclick="addToMealPlan('Chocolate Chunk', 2.79 )"> Chocolate Chunk - $2.79</button></li>
+                            <li><button onclick="addToMealPlan('Snickerdoodle', 2.79 )">Snickerdoodle - $2.79</button></li>
+                            <li><button onclick="addToMealPlan('Cookiewhich', 9.29 )">Cookiewhich - $9.29</button></li>
+                        </ul>
+                    </aside>
+
+
+                    <article id="selected-meals">
+                        <h3>Selected Dishes</h3>
+                        <ul id="selected-dish-list">
+                        
+                        </ul>
+                        <p>Total Cost: $<span id="total-cost">0.00</span></p>
+                    </article>
+                </div>
+
+            </section>
+
+        </main>
+    </div>
+    <script src = "script.js"> </script>
+</body>
+</html>
