@@ -53,5 +53,9 @@ h4{
     font-family: Georgia; 
 }
 
-
+.cart-items img { 
+ width: 60px; 
+ height: auto; 
+ border-radius: 5px;
+}
 
