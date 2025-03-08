@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<!-- 
+Name: Elizabeth Spratt
+Date: 03.07.25
+CSC 372-01
+
+-->
+
+
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment 4 </title>
+    <link rel="stylesheet" href="styles/styles.css">
+    <script src="script.js" defer></script>
+
+</head>
+
+<body>
+    <h1>Rock Paper Scissors Game. Go!</h1>
+
+    <div id="game-container"> 
+        <div id="playerturn"> 
+            <h2>Your Throw</h2>
+            <div class="options"> 
+                <img src="images/rock.PNG" id="rock" class="choice" alt="Rock"> 
+                <img src="images/paper.PNG" id="paper" class="choice" alt="Paper"> 
+                <img src="images/scissors.PNG" id="scissors" class="choice" alt="Scissors">
+            </div>    
+        </div>
+
+        <div id="computerturn"> 
+            <h2>Computer's Throw</h2>
+            <img src="images/question-mark.PNG" id="computer-choice" alt="Computer's Choice"> 
+        </div>
+
+        <div id="results">
+            <h2>Results:</h2>
+            <p id="result-text">Make your move!</p>
+        </div>
+
+        <div id="scoreboard">
+            <h2>Score:</h2>
+            <p>Wins: <span id="wins">0</span> | Losses: <span id="losses">0</span> | Ties: <span id="ties">0</span></p>
+            <button id="reset-btn">Reset Score</button>
+        </div>
+    </div>
+</body>
+</html>
